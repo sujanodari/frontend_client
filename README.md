@@ -44,3 +44,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 - axios - used as HTTP client
 - node-sass -Node-sass is a library that provides binding for Node.js to LibSass, the C version of the popular stylesheet preprocessor, Sass.
 - @material-ui/core - A React UI framework
+- @material-ui/lab - This package hosts the incubator components that are not yet ready to move to core material ui.
+- react-hook-form - for validation
+- @material-ui/data-grid - for data table

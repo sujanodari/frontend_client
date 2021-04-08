@@ -1,3 +1,4 @@
 export default {
-  user: "/",
+  addUser: "/",
+  Users: "/users",
 };
