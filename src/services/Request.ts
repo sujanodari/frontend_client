@@ -1,17 +1,23 @@
-import axios, { AxiosInstance, AxiosPromise } from 'axios';
+import axios, { AxiosInstance, AxiosPromise } from "axios";
 
-import environment from '../config/environments';
-import { IPostArgs, IGetArgs,IDeleteArgs, IHttpService } from '../interfaces/IRequest';
+import environment from "../config/environments";
+import {
+  IPostArgs,
+  IGetArgs,
+  IDeleteArgs,
+  IHttpService,
+} from "../interfaces/IRequest";
 
 const apiUrl: string = environment.apiUrl as string;
 
-export default class HttpClient<T extends AxiosPromise<any>> implements IHttpService<T> {
+export default class HttpClient<T extends AxiosPromise<any>>
+  implements IHttpService<T> {
   private instance: AxiosInstance;
 
   constructor() {
     this.instance = axios.create({
       baseURL: apiUrl,
-      responseType: 'json',
+      responseType: "json",
       withCredentials: false,
     });
   }
@@ -35,7 +41,7 @@ export default class HttpClient<T extends AxiosPromise<any>> implements IHttpSer
     }) as T;
   }
 
-  put(args:IPostArgs): T {
+  put(args: IPostArgs): T {
     const headers: any = {
       ...args.headers,
     };
@@ -45,7 +51,7 @@ export default class HttpClient<T extends AxiosPromise<any>> implements IHttpSer
     }) as T;
   }
 
-  delete(args:IDeleteArgs): T {
+  delete(args: IDeleteArgs): T {
     const headers: any = {
       ...args.headers,
     };

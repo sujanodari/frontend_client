@@ -1,0 +1,56 @@
+.paper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.form {
+  padding: 20px 20px 20px 20px;
+}
+
+.table-container {
+  margin-top: 50px;
+}
+.table {
+  margin-top: 20px;
+  max-height: 600px;
+  min-width: 650;
+  padding: 10px 0;
+}
+
+.table-paper {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 750;
+  box-shadow: 0 0 1.7142857142857143rem #cccccc;
+}
+.table-head-text {
+  font-weight: 700;
+  margin-left: auto;
+}
+
+.TableCell {
+  text-align: center;
+}
+
+.page-button {
+  margin-right: 5px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.pagination {
+  margin-top: 50px;
+  margin-left: 35%;
+}
+
+.user-button,
+.user-button:hover {
+  height: 48px;
+  background-color: $primary;
+  color: $white;
+}
+.element-margin {
+  margin-top: 2%;
+}
